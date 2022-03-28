@@ -1,0 +1,16 @@
+org: levicosta201
+app: ms-get-data-table-c
+service: ms-get-data-table-c
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.8
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
