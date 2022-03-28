@@ -19,6 +19,14 @@ Dissertação relacionada aos tipo de usos de banco de dados para a solução.
 ## 3.1 Amazon Aurora - database_a
 Para o banco de dados `database_b` foi selecionado a opção de utilizar Amazon Aurora por ter uma boa performançe e ser até 5 vezes mais rápido do que o MySql e três vezes mais rápido do que Postgress. Além de suportar grandes volumes de dados de até 128TB por instâcia e contar com até 15 réplicas de baixa latência. O response teremos:
 
+Payload Envio:
+
+```sh
+curl --location --request GET 'ms-auth-jwt' \
+--header 'Authorization: Bearer eyJhbEciOiJIJUzI1XiIsnR5cCI6IkpXVCJ'
+```
+
+Response: 
 
 ```json
 {
@@ -45,6 +53,13 @@ Para o banco de dados `database_b` foi selecionado a opção de utilizar Amazon 
 
 ## 3.2 Amazon Aurora - database_b
 Para o banco de dados `database_b` foi selecionado a opção de utilizar Amazon Aurora por ter uma boa performançe e ser até 5 vezes mais rápido do que o MySql e três vezes mais rápido do que Postgress. Além de suportar grandes volumes de dados de até 128TB por instâcia e contar com até 15 réplicas de baixa latência. O response teremos:
+
+Payload Envio:
+
+```sh
+curl --location --request GET 'ms-auth-jwt' \
+--header 'Authorization: Bearer eyJhbEciOiJIJUzI1XiIsnR5cCI6IkpXVCJ'
+```
 
 ```json
 {
@@ -74,6 +89,13 @@ Para o banco de dados `database_b` foi selecionado a opção de utilizar Amazon 
 ## 3.3 DynamoDB - database_c
 
 Para o banco de dados `database_c` foi selecionado a opção de utilizar DynamoDB para que a consulta pudesse ser extremamente rápido, algo que fique abaixo de 10ms.
+
+Payload Envio:
+
+```sh
+curl --location --request GET 'ms-auth-jwt' \
+--header 'Authorization: Bearer eyJhbEciOiJIJUzI1XiIsnR5cCI6IkpXVCJ'
+```
 
 Response:
 ```json
