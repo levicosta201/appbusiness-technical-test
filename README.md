@@ -2,7 +2,7 @@
 Disertação sobre utilização da resolução de problemas da appbusiness (Empresa fictícia). Era necessário uma solução que suportasse grande quantidade e volume de dados. Considerando que também fosse necessário a disponibilidade deste sistema. Mesmo que aumentasse a demanda. Foi procurado resolver os problemas da forma mais simples possível sem perder a qualidade.
 
 ## Arquitetura
-![Arquitetura](https://i.ibb.co/3zDGW2H/techinical-test-drawio-1.png)
+![Arquitetura](https://i.ibb.co/VMCd07M/techinical-test-drawio-2.png)
 
 ### 1 Servidores
 Pra este tipo de arquitetura foi pensado a não utilização de servidores como uma maquina EC2/VPS etc. O fato de não sabermos a quantidade exata de requisições (e sabermos que pode haver um grande volume de dados) optou-se por criar pequenos serviço em lambda para garantir que o sistema sempre se mantenha online e não tenha o risco de cair caso haja uma grande massa de requisições instântaneas. Olhando pelo valor da EC2 e da Lambda Function, o Servless acaba sendo uma solução mais viável em relação a custo benefício para este tipo de serviço.
