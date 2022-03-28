@@ -63,7 +63,7 @@ curl --location --request GET 'ms-auth-jwt' \
 
 ```json
 {
-    documentNumber: "88837363533",
+    "documentNumber": "88837363533",
     "age": 25,
     "listOfGoods": {
         "properties": [
